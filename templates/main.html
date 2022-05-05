@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav>        
+        <a href="#" class="logo"><h2>News Hub</h2></a>
+        <ul class= "menu">
+            <li class="nav-items"><a href='https://www.bbc.com/'target="_blank">BBC NEWS</a></li>
+            <li class="nav-items"><a href='https://www.usatoday.com/'target="_blank">USA TODAY</a></li>
+            <li class="nav-items"><a href='https://techcrunch.com/'target="_blank">TECHCRUNCH</a></li>  
+            <li class="nav-items"><a href='#'>Contact Us</a></li>
+        </ul>
+    </nav>
+<section id="top">
+    <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpVvBDC9PYIVVddY2CgKXspQmIL-ehrkRJIE69Y4meXsZF1QnfgAzl2ypnFIHPIGPeZPk&usqp=CAU.jpg">
+    </div>
+    <div class = "heading">TOP HEADLINES</div>
+    {% for title,desc,img,p_date,url in contents %}
+    <div class="wrap">
+        <div class="item"><a href="{{url}}"><img src="{{img}}"></a></div>
+        <div class = "box">
+        <div class="content"><a href="{{url}}"><h2>{{title}}</h2></a></div>
+        <div class="content"><a href="{{url}}"><p>{{desc}}</p></a></div>
+        <div class="content"><p style="color:red">Publish on:  </p><p>{{p_date}}</p></div>
+        </div>
+        </div> 
+    {% endfor %}  
+    
+    <div class = "heading">TOP NEWS TODAY</div>
+    {% for title,desc,img,p_date,url in all %}
+    <div class="wrap">
+        <div class="item"><a href="{{url}}"><img src="{{img}}"></a></div>
+        <div class = "box">
+        <div class="content"><a href="{{url}}"><h2>{{title}}</h2></a></div>
+        <div class="content"><p>{{desc}}</p></div>
+        <div class="content"><p style="color:red;">Published on: </p><p> {{p_date}} </p></div>
+        </div>
+        </div> 
+    {% endfor %}
+</section>
+<footer>
+<div class="footer"><h2> © BRIAN JOMO 2022</h2></div>
+</footer>
+</body>
+</html>
