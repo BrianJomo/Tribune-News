@@ -44,7 +44,7 @@ git clone git@github.com:BrianJomo/Tribune-News.git
 
 To gain access to the newsapi just click on this link: https://newsapi.org/
 
-To explore the features of this news website navigate to this link on your browser or just click on this link: news-hub1.herokuapp.com/
+To explore the features of this news website navigate to this link on your browser or just click on this link: https://news-hub1.herokuapp.com/
 
 
 ## Technology Used
