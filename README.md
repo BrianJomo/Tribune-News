@@ -1,4 +1,4 @@
-# News Hub
+# Tribune News 
 
 ##### By Brian Jomo.
 
@@ -22,7 +22,7 @@
 
 ## Installation
 
-To gain acess to this application click on this link: https://github.com/BrianJomo/News-Hub
+To gain acess to this application click on this link: https://github.com/BrianJomo/Tribune-News
 
 
 ### Requirements
@@ -35,12 +35,17 @@ To gain acess to this application click on this link: https://github.com/BrianJo
 
 To access this application, type the following command in your terminal to have a local copy of the application.
 ```
-git clone https://github.com/BrianJomo/News-Hub.git
+git clone https://github.com/BrianJomo/Tribune-News.git
 ```
 and for SSH, use the following command;
 ```
-git clone git@github.com:BrianJomo/News-Hub.git
+git clone git@github.com:BrianJomo/Tribune-News.git
 ```
+
+To gain access to the newsapi just click on this link: https://newsapi.org/
+
+To explore the features of this news website navigate to this link on your browser or just click on this link: news-hub1.herokuapp.com/
+
 
 ## Technology Used
 
