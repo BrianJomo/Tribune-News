@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def main():
-    api_key = 'bae92cf05a9742b291bf04eb42833550'
+    api_key = 'none'
     
     newsapi = NewsApiClient(api_key=api_key)
 
